@@ -1,0 +1,43 @@
+body{
+background-color: lightgrey;
+
+}
+.bildergrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr)
+}
+.bildergrid img{
+  width: 100%;
+}
+
+@media (max-width: 1400px){
+  body{
+    background-color: yellow;
+
+  }
+}
+@media (max-width: 1000px){
+  body{
+    background-color: green;
+  }
+}
+
+@media (max-width: 900px){
+.bildergrid{
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+body{
+  background-color: red;
+}
+}
+@media (max-width: 600px){
+  body{
+    background-color: blue;
+
+  }
+  .bildergrid{
+    grid-template-columns: 1fr;
+  }
+}

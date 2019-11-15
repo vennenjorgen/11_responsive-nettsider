@@ -1,0 +1,22 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25%;
+  
+
+}
+@media (max-width: 600px) {
+  nav{
+    flex-direction: column;
+  }
+  nav a{
+    border-bottom: solid black;
+    border-radius: 0%;
+  }
+}
